@@ -1,15 +1,16 @@
-import { useState } from 'react'
-import Counter from './components/Counter'
-import './App.css'
+import { useState } from "react";
+import Counter from "./components/Counter";
+import MovieList from './MovieList'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-       <h2> Counter Component Part </h2>
-       <Counter />
+      {/* <div>
+        <h2> Counter Component Part </h2>
+        <Counter />
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -22,9 +23,11 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
+      <MovieList />
+      
     </>
-  )
+  );
 }
 
-export default App
+export default App;
